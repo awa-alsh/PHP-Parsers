@@ -11,12 +11,12 @@ try:
 except:
     import importlib.resources as pkg_resources
 
-import src.modules.php
-from src.modules.php import syntax_tree
-from src.modules.php.base import Visitor
-from src.compiler.php import phpast
+import phpparser.modules.php
+from phpparser.modules.php import syntax_tree
+from phpparser.modules.php.base import Visitor
+from phpparser.compiler.php import phpast
 
-builtin_functions = pkg_resources.read_text(src.modules.php, "builtin_functions.txt")
+builtin_functions = pkg_resources.read_text(phpparser.modules.php, "builtin_functions.txt")
 builtin_functions = list(map(lambda x: x.strip(), builtin_functions))
 
 

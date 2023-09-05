@@ -2,10 +2,10 @@ import sys
 import os
 import collections
 
-from src.compiler.php import phpast
+from phpparser.compiler.php import phpast
 
-from src.modules.php.base import Traverser, Visitor
-from src.modules.php import syntax_tree
+from phpparser.modules.php.base import Traverser, Visitor
+from phpparser.modules.php import syntax_tree
 
 class BFTraverser(Traverser):
     """Performs a Breadth-First Traversal on the syntax_tree"""
