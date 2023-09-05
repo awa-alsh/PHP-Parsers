@@ -1,12 +1,12 @@
 import sys
 
 sys.path.insert(1, "../")
-from src.compiler.php import phpast
-from src.modules.php import syntax_tree
-from src.modules.php.traversers.bf import BFTraverser
+from phpparser.compiler.php import phpast
+from phpparser.modules.php import syntax_tree
+from phpparser.modules.php.traversers.bf import BFTraverser
 
-from src.modules.php.visitors.resolvers import DependencyResolver
-from src.modules.php.visitors.finders import NodeFinder
+from phpparser.modules.php.visitors.resolvers import DependencyResolver
+from phpparser.modules.php.visitors.finders import NodeFinder
 
 a = open(sys.argv[1])
 
