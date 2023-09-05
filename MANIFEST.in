@@ -1,2 +1,2 @@
 include phpparser/modules/php/builtin_functions.txt
-include phpparser/compiler/php_antlr
+include phpparser/compiler/php_antlr/*
